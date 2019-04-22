@@ -1,0 +1,6 @@
+{
+  "name": "Cockbox",
+  "description": "Shows information about your Cockbox",
+  "uuid": "cockbox@faissal.bensefia.id",
+  "shell-version": ["3.28.3"]
+}
