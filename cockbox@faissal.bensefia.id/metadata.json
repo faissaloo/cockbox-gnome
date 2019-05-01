@@ -1,6 +1,6 @@
 {
   "name": "Cockbox",
-  "description": "Shows information about your Cockbox",
+  "description": "The official Cockbox GNOME shell plugin. Displays the time until expiry, as well as providing the IP and Bitcoin wallet (which can be clicked to copy) for each server added. \n\"Dude that's wild\" ~ Vincent Canfield (Owner of OvO Systems Ltd)",
   "uuid": "cockbox@faissal.bensefia.id",
   "shell-version": ["3.28.3"]
 }
