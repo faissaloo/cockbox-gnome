@@ -2,7 +2,7 @@
 UUID=$(shell cat cockbox@faissal.bensefia.id/metadata.json | python -c "import json,sys;obj=json.load(sys.stdin);print obj['uuid'];")
 SRCDIR=src
 BUILDDIR=build
-FILES=metadata.json *.js stylesheet.css schemas
+FILES=metadata.json *.js res stylesheet.css schemas
 MKFILE_PATH := $(lastword $(MAKEFILE_LIST))
 MKFILE_DIR := $(dir $(MKFILE_PATH))
 ABS_MKFILE_PATH := $(abspath $(MKFILE_PATH))
