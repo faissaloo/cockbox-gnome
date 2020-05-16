@@ -1,3 +1,4 @@
+const GObject = imports.gi.GObject;
 const Gio = imports.gi.Gio;
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 const ShellVersion = imports.misc.config.PACKAGE_VERSION.split('.');
@@ -32,4 +33,4 @@ class SettingsManager {
   }
 }
 
-let settings_manager = new SettingsManager();
+var settings_manager = new SettingsManager();

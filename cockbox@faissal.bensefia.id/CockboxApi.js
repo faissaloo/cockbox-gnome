@@ -1,10 +1,10 @@
 const Soup = imports.gi.Soup;
 
-class CockboxApi {
+var CockboxApi = class CockboxApi {
   constructor() {
     this.soup_session = new Soup.Session({user_agent: 'CockliServerStatus@one'});
   }
-  
+
   async getInfo(id, apikey, callback) {
     let url = `https://cockbox.org/api/1.0/service/${id}`;
     let message = new Soup.Message({method: 'GET', uri: new Soup.URI(url)});

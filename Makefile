@@ -1,5 +1,5 @@
 #=============================================================================
-UUID=$(shell cat cockbox@faissal.bensefia.id/metadata.json | python -c "import json,sys;obj=json.load(sys.stdin);print obj['uuid'];")
+UUID=$(shell cat cockbox@faissal.bensefia.id/metadata.json | python -c "import json,sys;obj=json.load(sys.stdin);print(obj['uuid']);")
 SRCDIR=src
 BUILDDIR=build
 FILES=metadata.json *.js res stylesheet.css schemas

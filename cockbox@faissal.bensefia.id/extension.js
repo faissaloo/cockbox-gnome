@@ -18,12 +18,12 @@ Array.prototype.asyncMap = async function(callback) {
   return await Promise.all(promises);
 }
 
-class Cockbox extends PanelMenu.Button {
-    constructor() {
-      super(0.0, 'Cockbox', false);
+const Cockbox = GObject.registerClass(class Cockbox extends PanelMenu.Button {
+    _init() {
+      super._init(0.0, 'Cockbox', false);
       this.fetching = false;
 
-      this.actor.add_actor(new St.Icon({
+      this.add_actor(new St.Icon({
         gicon: Gio.icon_new_for_string(Me.path + '/res/logo.svg'),
         icon_size: 24
       }));
@@ -89,7 +89,7 @@ class Cockbox extends PanelMenu.Button {
 
       return menu_items;
     }
-}
+});
 
 let cockbox;
 
